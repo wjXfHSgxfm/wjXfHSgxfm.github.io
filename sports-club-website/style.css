@@ -1,0 +1,441 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+
+/* -----------  GENERAL ----------- */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,700;1,300;1,700&family=Merriweather:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+
+:root {
+  font-size: 16px;
+  --text:  #f5f7f7; 
+  --bg:  #00111a;
+  --primary: #f2a60c; 
+}
+
+
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  
+}
+   
+  
+  h1, h2, h3, h4, h5, h6, strong {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2{
+    font-size: 5rem;
+  }
+
+  h3{
+    font-size: 4rem;
+  }
+
+  h4{
+    font-size: 3rem;
+  }
+
+  h5{
+    font-size: 2rem;
+  }
+
+   
+  p, 
+  li {
+    font-size: 18px;
+  }
+
+  i {
+    font-style: italic;
+  }
+   
+  a {
+    text-decoration: none;
+  }
+
+/* -----------  NAV ----------- */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Koulen', cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 8rem;
+  padding: 3rem 0;
+  border-top: 1rem solid var(--primary);
+}
+
+nav ul {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav li {
+  font-style: italic;
+  display: inline;
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+nav a {
+  color: var(--text);
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* -----------  SECTION ----------- */
+
+main {
+  
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button.primary {
+  background-color: var(--primary);
+  color: var(--bg);
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  border: none;
+  font-weight: bold;
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 0 var(--bg);
+}
+
+/* -----------  HERO ----------- */
+
+#hero {
+  background-image: url(images/gym-hero.jpg);
+  background-size:cover;
+  background-position: bottom;
+  position: relative;
+  text-align: center;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20%;
+  box-sizing: border-box;
+  border-top: 1rem solid var(--primary);
+  border-bottom: 1rem solid var(--primary);
+  
+}
+
+#hero:before {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+#hero h1, #hero p {
+  
+  margin: 0 auto;
+  color: white;
+  z-index: 6;
+  position: relative;
+}
+
+#hero h1 {
+  font-family: 'Koulen', cursive;
+  font-size: 8rem;
+  margin-bottom: 1rem;
+}
+
+#hero h1 i {
+  font-weight:lighter;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 2rem; 
+}
+
+#hero button {
+  z-index: 6;
+  margin: 0 auto;
+}
+
+
+/* -----------  PLAN ----------- */
+
+#plan {
+  
+  padding: 5rem 0;
+  text-align: center;
+  line-height: 5rem;
+}
+
+#plan h2 {
+  margin-bottom: 2rem;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 2rem;
+  row-gap: 7rem;
+}
+
+.plan-item {
+  text-align: left;
+  background-color: rgba(255,255,255,0.08);
+  color: var(--text);
+  padding: 4rem; 
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 4rem;
+}
+
+.plan-price {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+
+
+/* -----------  TESTIMONIAL ----------- */
+#testimonial {
+  background-color: rgba(255,255,255,0.08);
+  color: var(--text);
+  padding: 10rem 10rem;
+  box-sizing: border-box;
+  font-size: 6rem;
+  border-top: 1rem solid var(--primary);
+  border-bottom: 1rem solid var(--primary);
+  text-align: center;
+}
+#testimonial p {
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+#testimonial p i {
+  font-weight: 300;
+
+}
+/* -----------  TEAM ----------- */
+
+#team {
+  padding: 5rem 0;
+  text-align: center;
+  line-height: 5rem;
+  margin-bottom: 5rem;
+}
+
+#team  h2 {
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.team-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  background-color: rgba(255,255,255,0.05);
+}
+
+.team-item:first-child {
+  margin-left: 0;
+}
+
+.team-item .image-container {
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.team-item .image-container img {
+  height: auto;
+  width: 100%;
+}
+
+.team-item h3 {
+  font-family: 'Koulen', cursive;
+
+}
+
+.team-item .text-container {
+  text-align:left;
+  padding: 4rem; 
+}
+
+/* -----------  CONTACT ----------- */
+
+  #contact {
+    background-color: rgba(255,255,255,0.08);
+    color: var(--text);
+    padding: 10rem 10rem;
+    box-sizing: border-box;
+    font-size: 6rem;
+    border-top: 1rem solid var(--primary);
+    border-bottom: 1rem solid var(--primary);
+    text-align: center;
+  }
+
+  #contact h2 {
+    margin-bottom: 2rem;
+  }
+
+
+/* -----------  FOOTER ----------- */
+
+  footer {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.625rem;
+    padding: 2rem 0;
+  }
+
+
+  @media only screen and (max-width: 900px) {
+    :root {
+      font-size: 8px;
+    }
+
+   }
+
+  @media only screen and (max-width: 490px) {
+    :root {
+      font-size: 6px;
+    }
+
+    section {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .team-grid {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .plan-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      justify-content: center;
+      gap: 1rem;
+      row-gap: 1rem;
+    }
+
+    .plan-price {
+      font-size: 4rem;
+      line-height: 7rem;
+    }
+
+   }
+
+
+
