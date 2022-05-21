@@ -14,20 +14,29 @@
     <header>
         <nav>
             <div class="logo""">
-                <img src="" alt="Logo" srcset="">
+                <img src="./images/logo.svg" alt="Logo" srcset="" height="80px">
             </div>
             <ul>
                 <li>
-
+                     <a href="#home">Home</a>
                 </li>
+                <li>
+                    <a href="#work">Work</a>
+               </li>
+               <li>
+                <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+               </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <svg width="125" height="125" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M84.3298 84.3298L1.48783e-05 83.9841L83.984 6.2883e-05L84.3298 84.3298Z" fill="#3BC1FF"/>
-                </svg>                
+            </svg>                
             <h1>Christoph. Design system lead.<br /> Currently learning Frontend technologies.</h1>
             <p>Significantly improving collaboration and consistency between design and development.</p>
             <button class="primary">Get in contact</button>
@@ -39,7 +48,78 @@
             <div><h2>18.5</h2>Active users of products I helped design</div>
         </section>
 
-        <section class="contact dark">
+
+
+        <section class="work" id="work">
+            <div>
+                <h2>Selected Projects</h1>
+                    <p>Look at some of the best work I've done in the past ten years of my career. <br> If you have a similar problem to solve, feel free to contact me today. Together we find out how I can best help you.</p>
+                       
+            </div>
+
+                <div class="project">
+                    <div class="image">
+                        <img src="./images/fly.jpg" alt="Flyeralarm Project">
+                    </div>
+                    <div class="description">
+                        <h3>Flyeralarm</h3>
+                        <p class="subheader">UI/UX Design, Frontend</p>
+                        <p>Over a two year period I designed a wide range of products at Europes biggest online printer. The impact of those ranged from faster development times to reducing cancellation rates.</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="description">
+                        <h3>Skore</h3>
+                        <p class="subheader">Product Design</p>
+                        <p>In only 5 months I designed a complete product suite for corporate e-learning. Today some of the worlds biggest companies are using it.</p>
+                    </div>
+                    <div class="image">
+                        <img src="./images/skore.jpeg" alt="Skore Project">
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="image">
+                        <img src="./images/collection.jpg" alt="Collection Project">
+                    </div>
+                    <div class="description">
+                        <h3>Collection</h3>
+                        <p class="subheader">Design</p>
+                        <p>A selection of the most amazing UI and UX work done over the past 10 years.</p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="skills" id="skills">
+
+            <div class="skills-card">
+                <svg width="80" height="80" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M84.3298 84.3298L1.48783e-05 83.9841L83.984 6.2883e-05L84.3298 84.3298Z" fill="#FEA96C"/>
+                </svg>    
+                <h3>Strategy & Analysis</h3>
+                <p>I'll learn about your business in detail and form a strategic execution plan. Wether you need a website or an app.</p>
+            </div>
+
+            <div class="skills-card">
+                <svg width="80" height="80" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M84.3298 84.3298L1.48783e-05 83.9841L83.984 6.2883e-05L84.3298 84.3298Z" fill="#9D3BEA"/>
+                </svg>    
+                <h3>User Experience Design (UX)</h3>
+                <p>With the business and users needs in mind I create wireframes, flowcharts and more.</p>
+            </div>
+
+            <div class="skills-card">
+                <svg width="80" height="80" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M84.3298 84.3298L1.48783e-05 83.9841L83.984 6.2883e-05L84.3298 84.3298Z" fill="#3BC1FF"/>
+                </svg>    
+                <h3>Front-End Development</h3>
+                <p>I take what we designed and create with HTML/CSS/Javascript the design components to get your development team up to speed.</p>
+            </div>
+
+        </section>
+
+        <section class="contact dark" id="contact">
             <form action="/index.html" method="post">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" placeholder="Please tell me your name..." required>
