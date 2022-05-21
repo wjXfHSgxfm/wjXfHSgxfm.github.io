@@ -633,10 +633,11 @@ a {
 }
 
 .Hero {
-  height: 920px;
-  background: url('../images/wallpaper3.jpg');
+  height: 900px;
+  background: url('../images/wallpaper3.jpg'); 
   background-size: cover;
   background-position: center;
+  margin-bottom: 2rem;
 }
 
 .HeroGroup {
