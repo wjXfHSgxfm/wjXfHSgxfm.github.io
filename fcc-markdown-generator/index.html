@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+  <head>
+    <title>Quote Generator</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body> 
+
+    <div class="container">
+
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-6">
+
+          <div class="card" id="quote-box">
+            <div class="card-body">
+              <h5 class="card-title" id="text">Loading</h5>
+              <p class="card-text" id="author">Loading</p>
+            </div>
+            <div class="card-footer">
+                <div>
+                  <a href="https://twitter.com/intent/tweet?text=I%20found%20this%20amazing%20quote%20machine.%20Try%20it.&url=www.something.com" class="card-link social" id="facebook"><i class="fa-brands fa-facebook-square"></i></a>
+                  <a href="https://twitter.com/intent/tweet?text=I%20found%20this%20amazing%20quote%20machine.%20Try%20it.&url=www.something.com" class="card-link social" id="tweet-quote"><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+
+              <button class="btn btn-dark" id="new-quote">New Quote</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <script src="quote.js"></script>
+  </body>
+</html>
