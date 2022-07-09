@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Drum Machine</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-8">
+
+        <div class="card card-preview" id="drum-machine">
+          <div class="card-header">
+            <h3>Drum Machine</h3>
+            
+          </div>
+          <div class="card-body">
+              <div class="button-grid">
+                <div class="drum-pad" id="bass-drum">
+                  Q
+                  <audio class="clip" src="./src/audio/bass-drum.mp3" id="Q"></audio>
+                </div>
+                <div class="drum-pad" id="cymbal">
+                  W
+                  <audio class="clip" src="./src/audio/cymbal.mp3" id="W"></audio>
+                </div>
+                <div class="drum-pad" id="drum-stick">
+                  E
+                  <audio class="clip" src="./src/audio/drum-stick.mp3" id="E"></audio>
+                </div>
+                <div class="drum-pad" id="hi-hat">
+                  A
+                  <audio class="clip" src="./src/audio/hi-hat.mp3" id="A"></audio>
+                </div>
+                <div class="drum-pad" id="snare">
+                  S
+                  <audio class="clip" src="./src/audio/snare.mp3" id="S"></audio>
+                </div>
+                <div class="drum-pad" id="tom">
+                  D
+                  <audio class="clip" src="./src/audio/tom.mp3" id="D"></audio>
+                </div>
+                <div class="drum-pad" id="goat">
+                  Z
+                  <audio class="clip" src="./src/audio/goat.mp3" id="Z"></audio>
+                </div>
+                <div class="drum-pad" id="chicken">
+                  X
+                  <audio class="clip" src="./src/audio/chicken.mp3" id="X"></audio>
+                </div>
+                <div class="drum-pad" id="slap">
+                  C
+                  <audio class="clip" src="./src/audio/slap.mp3" id="C"></audio>
+                </div>
+              </div>
+          </div>
+          <div  id="display">Press a button to start</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <link href="style.css" type="text/css" rel="stylesheet">
+
+  <script src="index.js"></script>
+</body>
+
+</html>
