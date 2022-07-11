@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Box Breathing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row justify-content-md-center">
+
+
+      <!-- 
+        1. Interval Input
+        2. Controls - Start
+        3. Box 
+        3.1 Top
+
+        Nice to have: 
+
+        - Save intervals completed in cookies
+        - Add limit of seconds
+      -->
+      <div class="col col-lg-8">
+
+        <div class="card card-preview" id="drum-machine">
+
+          <div class="card-body">
+
+              <div class="box-input">
+                <label for="interval-input"> Specify each interval in seconds</label>
+                <input type="number" value="5" id="interval-input" min="0" max="10">
+              </div>
+
+              <div class="box-controls">
+                <button class="box-play"><i class="fa-solid fa-circle-play"></i></button>
+                <button class="box-stop"><i class="fa-solid fa-stop"></i></button>
+              </div>
+
+              <div class="box-container">
+                <div class="box">
+                
+                  <div class="box-top">
+                    <div class="box-top-inner"></div>
+                  </div>
+  
+                  <div class="box-right">
+                    <div class="box-right-inner"></div>
+                  </div>
+  
+                  <div class="box-bottom">
+                    <div class="box-bottom-inner"></div>
+                  </div>
+  
+                  <div class="box-left">
+                    <div class="box-left-inner"></div>
+                  </div>
+
+                  <div class="box-counter">5</div>
+                </div>
+              </div>
+
+              <div class="box-round">
+                Round <span class="box-round-number">0</span>
+              </div>
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <link href="style.css" type="text/css" rel="stylesheet">
+
+  <script src="index.js"></script>
+</body>
+
+</html>

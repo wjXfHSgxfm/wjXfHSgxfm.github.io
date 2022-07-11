@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 2rem 0 0 0;
+  background: none;
+  color: #fff;
+  background: #d8eefe;
+}
+
+.card {
+  padding: 0; 
+  display: flex;
+  align-self: center;
+  border: none;
+  background-color: #d8eefe;
+}
+
+.card-header {
+  background: #094067;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 0.5rem 0;
+}
+
+.card-header h3 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 6rem;
+  letter-spacing: 0.3rem;
+}
+
+.card-body {
+  padding: 2rem;
+  color: #094067;
+  text-align: center;
+}
+
+.box-input {
+  width: 400px;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+.box-input input {
+  border-radius: 0.25rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.box-input label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.box-controls {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 400px;
+  margin: 2rem auto;
+}
+
+.box-controls button {
+  
+  font-size: 1.5rem;
+  background: #fff;
+  color: #3da9fc;
+  outline: none;
+  border: none;
+  padding: 1rem 4rem; 
+  border-radius: 0.5rem;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  z-index: 1;
+}
+
+.box-top, .box-bottom {
+  height: 24px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.box-top, .box-bottom, .box-left, .box-right {
+  background-color: #fff;
+}
+
+.box-top-inner, .box-bottom-inner, .box-left-inner, .box-right-inner {
+  background-color: #3da9fc;
+  transition: all 0.25s ease-in-out;
+}
+
+
+.box-top {
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+}
+
+.box-bottom {
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  margin-right: 24px;
+  width: calc(100% - 24px);
+}
+
+
+.box-top-inner, .box-bottom-inner {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+}
+
+.box-bottom-inner {
+  right: 0;
+}
+
+
+.box-left, .box-right {
+  width: 24px;
+  position: absolute;
+  z-index: 2;
+}
+
+.box-left {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-bottom: 24px;
+  height: calc(100% - 24px);
+}
+
+.box-right {
+  top: 0;
+  right: 0;
+  z-index: 3;
+  margin-top: 24px;
+  height: calc(100% - 24px);
+}
+
+.box-left-inner {
+  bottom: 0;
+}
+
+.box-left-inner, .box-right-inner {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+}
+
+.box-counter {
+  display: flex;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.box-round {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.box-round-number {
+  font-weight: bold;
+}
+
+
+
